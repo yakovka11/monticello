@@ -1,0 +1,332 @@
+@font-face {
+  src: url("../fonts/GothamMedium.ttf") format("truetype");
+  font-family: 'Gotham';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/GothamBold.ttf") format("truetype");
+  font-family: 'Gotham';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("../fonts/GothamLight.ttf") format("truetype");
+  font-family: 'Gotham';
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', sans-serif;
+}
+
+body * {
+  box-sizing: border-box
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
+section.main-header {
+  min-height: 100vh;
+  background: url("../img/main-header-bg.png") 0 0 no-repeat;
+}
+
+section.main-header .main-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section.main-header header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+section.main-header header .logo {
+  height: 100%;
+  margin-right: auto;
+}
+
+section.main-header header nav a {
+  font-family: 'Gotham', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-right: 100px;
+}
+
+section.main-header header nav a:last-child {
+  margin-right: 30px;
+}
+
+section.main-header header nav a::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section.main-header header .social img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+section.main-header .center-main-info {
+  text-align: center;
+}
+
+section.main-header .center-main-info h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+section.main-header .center-main-info p {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.arrow-down {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 50px;
+}
+
+section.gallery {
+  text-align: center;
+  padding: 100px 0 140px 0;
+}
+
+section.gallery h2 {
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+  position: relative;
+}
+
+section.gallery h2::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #000000;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+section.gallery .gallery-image-container {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+section.gallery .gallery-image-container .left-images {
+  width: 50%;
+}
+
+section.gallery .gallery-image-container .right-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+section.gallery .gallery-image-container .right-top-images,
+section.gallery .gallery-image-container .right-bottom-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.gallery button {
+  font-size: 14px;
+  padding: 18px 55px;
+  background-color: transparent;
+  border: 1px solid #000;
+  text-transform: uppercase;
+}
+
+section.news {
+  background: url("../img/news-bg.png") 0 0 no-repeat;
+  background-size: cover;
+  padding: 170px 0 100px 0;
+  text-align: center;
+}
+section.news h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 90px;
+}
+section.news h2::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #ffffff;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+section.news .slider-container {
+  position: relative;
+}
+section.news .slider-content {
+  width: 370px;
+  height: 545px;
+  background-color: #FFFFFF;
+  margin-right: 20px;
+}
+section.news .slider-content .slider-text {
+  padding: 27px 20px;
+}
+
+section.news .slider-content .slider-text h5 {
+  font-size: 22px;
+  color: #2c4058;
+}
+
+section.news .slider-content .slider-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 15px 0 30px 0;
+}
+
+section.news .slider-content .slider-text .avatar {
+  display: flex;
+  align-items: center;
+}
+
+section.news .slider-content .slider-text .avatar img {
+  margin-right: 25px;
+}
+
+section.news .slider-content .slider-text .avatar p {
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+section.news .slider-content .slider-text .avatar span {
+  font-size: 14px;
+  color: #55b7ff;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.prev-button {
+  left: -80px;
+}
+.next-button {
+  right: -80px;
+}
+.prev-button img,
+.next-button img {
+  width: 40px;
+  height: 40px;
+}
+.slick-dots {
+  padding-top: 50px;
+}
+.slick-dots li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+.slick-dots li button {
+  background: url('../img/iconfinder_icon-ios7-circle-outline_211717.svg') 0 0 no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  border: none;
+}
+.slick-dots li.slick-active button {
+  background: url('../img/iconfinder_record-round-circle-dot_2203520.svg') 0 0 no-repeat;
+}
+
+section.map #map{
+  width: 100%;
+  height: 700px;
+}
+
+footer {
+  position: relative;
+  background: url("../img/footer-bg.png") 0 0 no-repeat;
+  height: 520px;
+}
+footer .contacts-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  margin: auto;
+  padding: 60px;
+  width: 770px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+footer .contacts-footer h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 44px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 90px;
+}
+footer .contacts-footer h2::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #000000;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
